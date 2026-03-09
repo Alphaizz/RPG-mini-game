@@ -616,13 +616,13 @@ window.addEventListener('keydown', (e) => {
 
     // --- DEBUG / CHEAT SYSTEM (REMOVE LATER) ---
     // Press 'B' to instantly teleport to the Boss Arena
-    /*if (e.key === 'b' || e.key === 'B') {
+    if (e.key === 'b' || e.key === 'B') {
         player.hasWeapon = true;
         player.hasSword = true;
         player.hasBossKey = true;
         player.hp = 500;       
         player.maxHp = 500;
-        player.damage = 100;    
+        player.damage = 10000;    
         player.potions = 5;
         dungeonLevel = 7;      
         generateWorld(3);      
@@ -631,7 +631,6 @@ window.addEventListener('keydown', (e) => {
         showNotification("DEBUG: Teleported to Boss! 🤖");
         return;
     }
-    */
    
     // --- NEW: Press 'N' to teleport back to the Forest ---
     if (e.key === 'n' || e.key === 'N') {
